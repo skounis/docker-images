@@ -5,4 +5,4 @@ RUN { \
 	} >> /etc/php/7.3/fpm/php.ini
 
 
-RUN apt-get update && apt-get install -y telnet && rm -rf /var/lib/apt
+RUN apt-get update && apt-get install -y telnet php7.3-bcmath && rm -rf /var/lib/apt
